@@ -1,11 +1,8 @@
 __pycache__/
 *.py[cod]
-
-.venv/
 venv/
-
 .idea/
 .vscode/
-
 *.db
 .env
+ppt/
