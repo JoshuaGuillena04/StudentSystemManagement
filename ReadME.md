@@ -1,4 +1,4 @@
-<img width="1002" height="927" alt="Screenshot 2026-10-15 225423" src="https://github.com/user-attachments/assets/d93053a9-100c-4488-8163-621c2dc16b3f" />
+
 # 1.Project Title
 
 **Student management system**
