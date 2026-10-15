@@ -12,6 +12,7 @@ from PyQt6.QtWidgets import (
 
 from subjects.subjects import get_subjects
 from database.database import get_student, update_student
+from features.subject_page import SubjectPage
 
 
 class UpdateStudentPage(QWidget):
@@ -19,6 +20,33 @@ class UpdateStudentPage(QWidget):
     def __init__(self, main_window):
 
         super().__init__()
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #EAF2F8;
+            }
+
+            QPushButton {
+                background-color: #202D49;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            QPushButton:hover {
+                background-color: #344563;
+            }
+
+            QLineEdit, QComboBox, QListWidget {
+                background-color: white;
+                color: black;
+                border: 1px solid #B8C7D9;
+                border-radius: 5px;
+                padding: 6px;
+            }
+        """)
 
         self.main_window = main_window
         self.student_id = None

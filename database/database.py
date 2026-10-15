@@ -235,3 +235,28 @@ def delete_student(student_id):
 
     connection.commit()
     connection.close()
+
+def get_dashboard_analytics():
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    cursor.execute("SELECT fullname, subjects FROM students")
+    students = cursor.fetchall()
+
+    connection.close()
+
+    student_names = []
+    subjects_counts = []
+
+    for student in students:
+        student_names.append(student[0])
+
+        if student[1]:
+            subjects = json.loads(student[1])
+            subjects_counts.append(len(subjects))
+        else:
+            subjects_counts.append(0)
+
+
+    return student_names, subjects_counts
+

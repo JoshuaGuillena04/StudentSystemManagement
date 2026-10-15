@@ -10,10 +10,11 @@ from ui.dashboard import DashboardPage
 from features.verify import VerifyPage
 from features.student_detail import StudentDetailPage
 
-from features.add_student import AddStudentPage
-from features.view_student import ViewStudentPage
-from features.update_student import UpdateStudentPage
+from operations.add_student import AddStudentPage
+from operations.view_student import ViewStudentPage
+from operations.update_student import UpdateStudentPage
 from style.style import STYLE
+from features.subject_page import SubjectPage
 
 
 class MainWindow(QMainWindow):
@@ -40,6 +41,9 @@ class MainWindow(QMainWindow):
         self.verify_page = VerifyPage(self)
         self.student_detail_page = StudentDetailPage(self)
 
+        self.subject_page = SubjectPage(self)
+        self.pages.addWidget(self.subject_page)
+
         self.pages.addWidget(self.login_page)
         self.pages.addWidget(self.register_page)
         self.pages.addWidget(self.dashboard_page)
@@ -48,6 +52,7 @@ class MainWindow(QMainWindow):
         self.pages.addWidget(self.update_student_page)
         self.pages.addWidget(self.verify_page)
         self.pages.addWidget(self.student_detail_page)
+
 
         self.setCentralWidget(self.pages)
 
@@ -83,7 +88,7 @@ class MainWindow(QMainWindow):
 
 
     def show_view_student(self):
-
+        #self.setCurrentWidget(self.view_student_page)
         self.pages.setCurrentWidget(
             self.view_student_page
         )
@@ -109,6 +114,11 @@ class MainWindow(QMainWindow):
             self.student_detail_page
         )
 
+    # def open_subjects(self):
+    #     self.main_window.show_subjects()
+
+    def show_subjects(self):
+        self.pages.setCurrentWidget(self.subject_page)
 
 
 
