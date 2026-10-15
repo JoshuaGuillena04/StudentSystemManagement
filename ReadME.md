@@ -1,3 +1,4 @@
+<img width="1002" height="927" alt="Screenshot 2026-10-15 225423" src="https://github.com/user-attachments/assets/d93053a9-100c-4488-8163-621c2dc16b3f" />
 # 1.Project Title
 
 **Student management system**
@@ -329,17 +330,28 @@ Delete:
 The delete_student() function remove a student using the student ID.
 
 # 11.Screenshots
+<img width="1002" height="927" alt="Screenshot 2026-10-15 225423" src="https://github.com/user-attachments/assets/31de1d6d-018f-49fb-bf37-55f9a8e0dab4" />
 
 Login page - Shows the login interface where the user enter their username and password.
  
+<img width="995" height="932" alt="Screenshot 2026-10-15 225434" src="https://github.com/user-attachments/assets/267ab87c-d11c-404a-92e5-2e555222ef39" />
+
 Register page - If the user does not have a account, the registration interface is for creating a new account.
+
+ <img width="1006" height="932" alt="Screenshot 2026-10-15 225502" src="https://github.com/user-attachments/assets/84503fe6-9694-4e9a-afe6-faa53c3713d4" />
  
 Dashboard - The interface shows the dashboard with add student, view student and logout buttons.
+
+ <img width="1002" height="927" alt="Screenshot 2026-10-15 225541" src="https://github.com/user-attachments/assets/ef40db45-89b7-409e-936a-5c3566a21c99" />
  
 Add student – This shows student information form and subject selection.
- 
+
+ <img width="993" height="927" alt="Screenshot 2026-10-15 225710" src="https://github.com/user-attachments/assets/ac87eb29-7137-4901-94ed-5a7510e18ec5" />
+
 Verify – this shows the verify interface where you can verify if the information’s are correct before submitting it.
- 
+
+ <img width="998" height="932" alt="Screenshot 2026-10-15 225736" src="https://github.com/user-attachments/assets/812a2aac-d712-4368-a7cd-3e84cabcc1c2" />
+
 View student – this shows the list of registered student and you can even view their full information, modify their information and delete the student information.
 # 12.Testing
 | Feature           | Test                                      | Expected Result                         | Actual Result |
