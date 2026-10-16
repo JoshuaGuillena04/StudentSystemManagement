@@ -33,7 +33,7 @@ The Main Objective of this System are:
 
 **4.2 Login**– register users can log in using their username and password.
 
-**4.3 Dashboard** – after logging in the user taken to the dashboard panel where you can choose what should you do, in dashboard panel there are 3 buttons for add Student, View Student, and Logout.
+**4.3 Dashboard** – after logging in the user taken to the dashboard panel, which displays the total number of students, total subjects selections, and a bar chart showing the number of subject selected by each student. The dashboard also provides navigation buttons for Dashboard, subjects, students, enrollment and logout.
 
 **4.4 add student** – the user can enter the student information such as 
 * Full name
@@ -82,22 +82,30 @@ StudentManagementSystem/
 
 ├── features/
 
-│   ├── add_student.py
-
-│   ├── view_student.py
-
-│   ├── update_student.py
-
 │   ├── student_detail.py
+
+│   ├── subject_page.py
 
 │   └── verify_student.py
 
 │
+
+├── operations/
+
+│   ├── add_student.py
+
+│   ├── update_student.py
+
+│   └── view-student.py
+
+│
+
 ├── subjects/
 
 │   └── subjects.py
 
 │
+
 ├── Ui/	 
 
 │   └──dashboard 
@@ -112,6 +120,8 @@ StudentManagementSystem/
 **Authentication/** - contains the login and registration pages.
 
 **Features/** - this hold major function of the system.
+
+**Operations/** - contains the functions for adding, updating, and viewing student records.
 
 **Subjects/** - contains available subject information and subject related functions.
 
@@ -142,7 +152,7 @@ Step 4 – Open Dashboard
 After successful login, the dashboard display
 
 Step 5 – Add student
-Click add student and enter the student information:
+Click Enrollment to add student and enter the student information:
 
 Full name:
 
@@ -158,24 +168,27 @@ Course:
 
 Year Level:
 
+step 6 - selection of subjects
+Clicking next to continue in selection of subject panel.
+
 Select Subjects:
 
-Step 6 – Verify 
+Step 7 – Verify 
 By clicking next to continue to verification page.
 
-Step 7 – View Students
-Return the dashboard and select view student the registered student will appear and you may choose view details, update, and delete.
+Step 8 – View Students
+Return the dashboard and select students to see the registered students and you may choose view details, update, and delete.
 
-Step 8 – View details 
+Step 9 – View details 
 Select student and you may see all their information.
 
-Step 9 – Update
+Step 10 – Update
 Select student and click update to modify student information.
 
-Step 10 – delete
+Step 11 – delete
 Select a student and click delete to delete student information
 
-Step 11 – Logout 
+Step 12 – Logout 
 Click log out to return to login page.
 
 # 9.OOP Implementation
